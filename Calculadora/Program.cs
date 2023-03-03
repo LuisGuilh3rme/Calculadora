@@ -1,4 +1,4 @@
-﻿double num1, num2; 
+﻿double num1, num2;
 int opcao = 0;
 
 Console.WriteLine("Informe o primeiro número:");
@@ -12,7 +12,8 @@ while (opcao != 5)
     Menu();
 }
 
-void Menu() {
+void Menu()
+{
     Console.Clear();
     Console.WriteLine("1 - Somar");
     Console.WriteLine("2 - Subtrair");
@@ -28,22 +29,27 @@ void Menu() {
             Console.WriteLine("Opção inválida");
             Console.ReadKey();
             break;
-        case 1: 
+
+        case 1:
             Console.WriteLine("{0} + {1} = {2}", num1, num2, num1 + num2);
             Console.ReadKey();
             break;
+
         case 2:
             Console.WriteLine("{0} - {1} = {2}", num1, num2, num1 - num2);
             Console.ReadKey();
             break;
+
         case 3:
             Console.WriteLine("{0} * {1} = {2}", num1, num2, num1 * num2);
             Console.ReadKey();
             break;
+
         case 4:
             Console.WriteLine("{0} / {1} = {2}", num1, num2, num1 / num2);
             Console.ReadKey();
             break;
+
         case 5:
             Console.WriteLine("Até mais!");
             break;
