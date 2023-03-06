@@ -28,6 +28,11 @@ while (opcao != 5)
             break;
 
         case 4:
+            if (num2 == 0)
+            {
+                Console.WriteLine("Impossível dividir por zero");
+                break;
+            }
             Console.WriteLine("{0} / {1} = {2}", num1, num2, Divisao());
             break;
 
