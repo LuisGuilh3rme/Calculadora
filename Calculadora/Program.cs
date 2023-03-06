@@ -9,8 +9,7 @@ num2 = double.Parse(Console.ReadLine());
 
 while (opcao != 5)
 {
-    opcao = Menu();
-    switch (opcao)
+    switch (Menu())
     {
         default:
             Console.WriteLine("Opção inválida");
@@ -57,8 +56,8 @@ int Menu()
 
 void Continuar()
 {
-    Console.WriteLine("Aperte qualquer tecla para continuar:");
-    Console.ReadKey();
+    Console.WriteLine("Aperte enter para continuar:");
+    Console.ReadLine();
 }
 
 double Soma()
