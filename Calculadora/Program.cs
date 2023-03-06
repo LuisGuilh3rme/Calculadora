@@ -9,7 +9,7 @@ num2 = double.Parse(Console.ReadLine());
 
 while (opcao != 5)
 {
-    switch (Menu())
+    switch (opcao = Menu())
     {
         default:
             Console.WriteLine("Opção inválida");
